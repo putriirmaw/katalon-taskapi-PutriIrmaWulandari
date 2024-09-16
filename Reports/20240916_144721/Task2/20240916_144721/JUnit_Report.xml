@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Task2" time="5.116" tests="3" failures="0" errors="0">
+   <testsuite name="Task2" tests="3" failures="0" errors="0" time="5.116" skipped="0" timestamp="16-09-2024T14:47:25" hostname="Putriirmaw - Ty" id="Test Suites/Task2">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Putri\\git\\tes-API\\Reports\\20240916_144721\\Task2\\20240916_144721"/>
+         <property name="logFiles" value="C:\\Users\\Putri\\git\\tes-API\\Reports\\20240916_144721\\Task2\\20240916_144721\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Putriirmaw - Ty"/>
+         <property name="hostAddress" value="192.168.0.103"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+      </properties>
+      <testcase name="Test Cases/tesGET" time="3.713" classname="Test Cases/tesGET" status="PASSED">
+         <system-out><![CDATA[16-09-2024T14:47:26 - [TEST_CASE][PASSED] - Test Cases/tesGET: Test Cases/tesGET
+
+16-09-2024T14:47:26 - [TEST_STEP][PASSED] - getResponse = sendRequest(findTestObject("GET", ["completed":false, "userId":"1"])): Send request successfully
+
+16-09-2024T14:47:29 - [MESSAGE][INFO] - HAR: C:\Users\Putri\git\tes-API\Reports\20240916_144721\Task2\20240916_144721\requests\main\0.har
+
+16-09-2024T14:47:29 - [MESSAGE][PASSED] - Send request successfully
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(getResponse, 200): Verify response status code successfully
+
+16-09-2024T14:47:29 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - result = slurper.parseText(getResponse.getResponseBodyContent()): null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - userId = userId: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert userId != null: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert userId instanceof java.lang.Integer: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - id = id: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert id != null: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert id instanceof java.lang.Integer: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - title = title: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert title != null: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert title instanceof java.lang.String: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - completed = completed: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert completed != null: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - assert completed instanceof java.lang.Boolean: null
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - println(getResponse): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/tesPOST" time="0.506" classname="Test Cases/tesPOST" status="PASSED">
+         <system-out><![CDATA[16-09-2024T14:47:29 - [TEST_CASE][PASSED] - Test Cases/tesPOST: Test Cases/tesPOST
+
+16-09-2024T14:47:29 - [TEST_STEP][PASSED] - postResponse = sendRequest(findTestObject("POST")): Send request successfully
+
+16-09-2024T14:47:30 - [MESSAGE][INFO] - HAR: C:\Users\Putri\git\tes-API\Reports\20240916_144721\Task2\20240916_144721\requests\main\1.har
+
+16-09-2024T14:47:30 - [MESSAGE][PASSED] - Send request successfully
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - verifyResponseStatusCode(postResponse, 201): Verify response status code successfully
+
+16-09-2024T14:47:30 - [MESSAGE][PASSED] - Verify response status code successfully
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - result = slurper.parseText(postResponse.getResponseBodyContent()): null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - userId = userId: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - id = id: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - title = title: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - completed = completed: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - println(postResponse): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/tesDELETE" time="0.551" classname="Test Cases/tesDELETE" status="PASSED">
+         <system-out><![CDATA[16-09-2024T14:47:30 - [TEST_CASE][PASSED] - Test Cases/tesDELETE: Test Cases/tesDELETE
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - delResponse = sendRequest(findTestObject("DELETE", ["completed":false, "userId":"1"])): Send request successfully
+
+16-09-2024T14:47:30 - [MESSAGE][INFO] - HAR: C:\Users\Putri\git\tes-API\Reports\20240916_144721\Task2\20240916_144721\requests\main\2.har
+
+16-09-2024T14:47:30 - [MESSAGE][PASSED] - Send request successfully
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - result = slurper.parseText(delResponse.getResponseBodyContent()): null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - userId = userId: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - id = id: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - title = title: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - completed = completed: null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - println(delResponse): null
+
+16-09-2024T14:47:30 - [TEST_STEP][PASSED] - assert true: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[16-09-2024T14:47:25 - [TEST_SUITE][PASSED] - Task2: Test Cases/tesDELETE]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
